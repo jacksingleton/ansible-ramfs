@@ -1,0 +1,14 @@
+---
+- mount:
+    name="{{ ramfs_path }}"
+    src=ramfs
+    fstype=ramfs
+    state=mounted
+    opts=rw,noexec,nodev,nosuid
+  become: yes
+
+- file:
+    path="{{ ramfs_path }}"
+    state=directory
+    owner=root
+    mode="{{ ramfs_mode }}"

@@ -1,0 +1,5 @@
+- hosts: all
+  sudo: true
+  roles:
+    - role: ansible-ramfs
+      ramfs_path: /mnt/ramdisk
