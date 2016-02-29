@@ -1,4 +1,4 @@
-Role Name
+ansible-ramfs
 =========
 
 Mount an in-memory `ramfs` filesystem.
